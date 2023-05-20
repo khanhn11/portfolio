@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -16,26 +16,37 @@ const Main = () => {
           </h1>
           <h1 className="py-4">Full Stack Web Developer</h1>
           <p className="py-4 max-w-[70%] m-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+          Highly motivated and detail-oriented Junior Software Developer seeking an opportunity to contribute to a dynamic and collaborative software development team. With a solid foundation in information technolog and a passion for coding, my objective is to further enhance my skills and knowledge while actively participating in the design, development, and deployment of innovative software solutions. I am eager to work alongside experienced professionals, learn new technologies, and contribute to the success of projects by leveraging my strong problem-solving abilities and dedication to producing high-quality code.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaLinkedinIn />
+              <Link
+                href="https://www.linkedin.com/in/khanh-nguyen-ba80a622b/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedinIn />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaGithub />
+              <Link
+                href="https://github.com/khanhn11"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                <FaGithub />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail />
+              <Link href="#contact">
+                <AiOutlineMail />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsPersonLinesFill />
+              <Link href="/resume">
+                <BsPersonLinesFill />
+              </Link>
             </div>
           </div>
         </div>

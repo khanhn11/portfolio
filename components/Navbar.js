@@ -15,7 +15,11 @@ const Navbar = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (router.asPath === "/concert") {
+    if (
+      router.asPath === "/barbershop" ||
+      router.asPath === "/portfolio-tailwinds" ||
+      router.asPath === "/springboot"
+    ) {
       setNavBorder(false);
       setNavBg("transparent");
     } else {
@@ -96,12 +100,7 @@ const Navbar = () => {
           }
         >
           <div className="flex w-full items-center justify-between">
-            <Image
-              src={NavLogo}
-              width="87"
-              height="35"
-              alt=""
-            />
+            <Image src={NavLogo} width="87" height="35" alt="" />
             <div
               onClick={handleNav}
               className="rounded-full shadow-lg shadown-gray-400 p-3 cursor-pointer"

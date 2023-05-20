@@ -1,4 +1,6 @@
-import projectImg from "../public/assets/projects/abc.jpeg";
+import barbershopImg from "../public/assets/projects/barbershop.png";
+import projectImg from "../public/assets/projects/project.avif"
+import portfolioImg from "../public/assets/projects/portfolio.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -11,24 +13,22 @@ const Projects = () => {
         <h2 className="py-4">What I've Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Concert Venue"
-            backgroundImg={projectImg}
-            projectUrl="/concert"
+            title="Barber Shop"
+            backgroundImg={barbershopImg}
+            projectUrl="/barbershop"
+            technolog="Next JS"
           />
           <ProjectItem
-            title="Concert Venue"
-            backgroundImg={projectImg}
-            projectUrl="/concert"
+            title="Portfolio"
+            backgroundImg={portfolioImg}
+            projectUrl="/portfolio-tailwinds"
+            technolog="Tailwinds"
           />
           <ProjectItem
-            title="Concert Venue"
+            title="Spring Security with JWT"
             backgroundImg={projectImg}
-            projectUrl="/concert"
-          />
-          <ProjectItem
-            title="Concert Venue"
-            backgroundImg={projectImg}
-            projectUrl="/concert"
+            projectUrl="/springboot"
+            technolog="Spring Boot"
           />
         </div>
       </div>

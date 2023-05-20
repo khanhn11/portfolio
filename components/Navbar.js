@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import NavLogo from "../public/assets/NavLogo.png";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
@@ -60,7 +59,8 @@ const Navbar = () => {
         }
       >
         <Link href="/">
-          <Image src={NavLogo} width="90" height="50" alt="/" />
+          
+          <h1>KN</h1>
         </Link>
 
         <div>
@@ -100,7 +100,8 @@ const Navbar = () => {
           }
         >
           <div className="flex w-full items-center justify-between">
-            <Image src={NavLogo} width="87" height="35" alt="" />
+            
+          <h1>KN</h1>
             <div
               onClick={handleNav}
               className="rounded-full shadow-lg shadown-gray-400 p-3 cursor-pointer"

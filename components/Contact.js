@@ -27,27 +27,44 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="py-2">Name here</h2>
-                <p>Front-End Developer</p>
+                <h2 className="py-2">Khanh Nguyen</h2>
+                <p>Full Stack Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
-                  me and Let's talk.'
+                  me and Let's talk.
                 </p>
               </div>
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
                   <div className="rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaLinkedinIn />
+                    <Link
+                      href="https://www.linkedin.com/in/khanh-nguyen-ba80a622b/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaLinkedinIn />
+                    </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaGithub />
+                    <Link
+                      href="https://github.com/khanhn11"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {" "}
+                      <FaGithub />
+                    </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
+                    <Link href="#contact">
+                      <AiOutlineMail />
+                    </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <BsPersonLinesFill />
+                    <Link href="/">
+                      <BsPersonLinesFill />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -111,7 +128,10 @@ const Contact = () => {
         <div className="flex justify-center py-12">
           <Link href="">
             <div className="rounded-full shadow-lg shadow-gray-900 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp className="text-[#00ba7cc4]" size={30} />
+              <HiOutlineChevronDoubleUp
+                className="text-[#00ba7cc4]"
+                size={30}
+              />
             </div>
           </Link>
         </div>

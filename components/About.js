@@ -1,4 +1,5 @@
 import Image from "next/image";
+import aboutImg from "../public/assets/about.jpg"
 import Link from "next/link";
 
 const About = () => {
@@ -34,9 +35,7 @@ const About = () => {
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-900 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
             className="rounded-xl"
-            src="/../public/assets/about.jpg"
-            width="675"
-            height="150"
+            src={aboutImg}
             alt="/"
           />
         </div>

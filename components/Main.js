@@ -16,7 +16,16 @@ const Main = () => {
           </h1>
           <h1 className="py-4">Full Stack Web Developer</h1>
           <p className="py-4 max-w-[70%] m-auto">
-          Highly motivated and detail-oriented Junior Software Developer seeking an opportunity to contribute to a dynamic and collaborative software development team. With a solid foundation in information technolog and a passion for coding, my objective is to further enhance my skills and knowledge while actively participating in the design, development, and deployment of innovative software solutions. I am eager to work alongside experienced professionals, learn new technologies, and contribute to the success of projects by leveraging my strong problem-solving abilities and dedication to producing high-quality code.
+            Highly motivated and detail-oriented Junior Software Developer
+            seeking an opportunity to contribute to a dynamic and collaborative
+            software development team. With a solid foundation in information
+            technolog and a passion for coding, my objective is to further
+            enhance my skills and knowledge while actively participating in the
+            design, development, and deployment of innovative software
+            solutions. I am eager to work alongside experienced professionals,
+            learn new technologies, and contribute to the success of projects by
+            leveraging my strong problem-solving abilities and dedication to
+            producing high-quality code.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
@@ -44,7 +53,7 @@ const Main = () => {
               </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-900 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <Link href="/resume">
+              <Link href="/">
                 <BsPersonLinesFill />
               </Link>
             </div>

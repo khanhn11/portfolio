@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import contactImg from "../public/assets/contact.jpg";
 import { AiOutlineMail } from "react-icons/ai";
@@ -8,6 +8,17 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phonenumber, setPhonenumber] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+    console.log(name, email, phonenumber, subject, message);
+  };
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -73,7 +84,7 @@ const Contact = () => {
           {/* right*/}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-900 rounded-xl lg:p-4">
             <div className="p-4">
-              <form action="">
+              <form onSubmit={onSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
@@ -81,6 +92,7 @@ const Contact = () => {
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="name"
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </div>
                   <div className="flex flex-col">
@@ -91,6 +103,7 @@ const Contact = () => {
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="phone"
+                      onChange={(e) => setPhonenumber(e.target.value)}
                     />
                   </div>
                 </div>
@@ -100,6 +113,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
                     name="email"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -108,6 +122,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
                     name="subject"
+                    onChange={(e) => setSubject(e.target.value)}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -116,6 +131,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
                     name="message"
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">

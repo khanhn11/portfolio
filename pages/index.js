@@ -10,6 +10,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Khanh | Software Developer</title>
+        <meta name="description" content="Khanh's Portfolio Website" />
       </Head>
       <Main />
       <About />

@@ -1,5 +1,5 @@
 import barbershopImg from "../public/assets/projects/barbershop.png";
-import projectImg from "../public/assets/projects/project.avif"
+import projectImg from "../public/assets/projects/project.webp"
 import portfolioImg from "../public/assets/projects/portfolio.png";
 import ProjectItem from "./ProjectItem";
 

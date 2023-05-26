@@ -59,7 +59,6 @@ const Navbar = () => {
         }
       >
         <Link href="/">
-          
           <h1>KN</h1>
         </Link>
 
@@ -79,6 +78,9 @@ const Navbar = () => {
             </Link>
             <Link href="/#contact">
               <li className="ml-10 text-sm uppcase hover:border-b">Contact</li>
+            </Link>
+            <Link href="/resume">
+              <li className="ml-10 text-sm">Resume</li>
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
@@ -100,8 +102,7 @@ const Navbar = () => {
           }
         >
           <div className="flex w-full items-center justify-between">
-            
-          <h1>KN</h1>
+            <h1>KN</h1>
             <div
               onClick={handleNav}
               className="rounded-full shadow-lg shadown-gray-400 p-3 cursor-pointer"
@@ -130,6 +131,9 @@ const Navbar = () => {
               </Link>
               <Link href="/#contact">
                 <li className="py-4 text-sm">Contact</li>
+              </Link>
+              <Link href="/resume">
+                <li className="py-4 text-sm">Resume</li>
               </Link>
             </ul>
             <div className="pt-40">
